@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id ="app">
+            <div id = "app-frame"> 
+                <div id = 'app-head'><div id = 'app-head-container'> <img src = "Animal_Crossing_logo.png"> </div></div>
+                <div id = 'app-main'>
+                    <div id = 'app-forms'>
+                        <div id = 'tag-bar'>
+                            <div class="tag-bar-tag tag-choosed"><label>V​illager​</label></div>
+                            <div class="tag-bar-tag">Material</div>
+                            <div class="tag-bar-tag">Furniture​</div>
+                            <div class="tag-bar-tag">Recipe</div>
+                            <div class="tag-bar-tag">Island</div>
+                        </div>
+                        <div id = 'form-box'>
+                            <form class = "form" id = "form1" style="z-index: 10;">
+                                    <div id="vimg">
+                                        <img src="https://img.rankedboost.com/wp-content/plugins/animal-crossing-new-horizons/assets/villager-images/Raymond.png">
+                                    </div>
+                                    <div id="vform">
+                                        <table class="top-form-table">
+                                            <tbody>
+                                            <tr>
+                                                <td><label>VillagerID: </label><input type="number"></td>
+                                                <td><label>Name: </label><input type="text"></td>
+                                                <td><label for="vgender">Gender: </label>
+                                                    <select id="vgender">
+                                                      <option value="1">Male</option>
+                                                      <option value="2">Famale</option>
+                                                    </select>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td><label for="vspecies">Species:</label>
+                                                    <select id="vspecies">
+                                                        <option value="0">NULL</option>
+                                                        <option value="1">Alligator</option>
+                                                        <option value="2">Anteater</option>
+                                                        <option value="3">Bear</option>
+                                                        <option value="4">Bird</option>
+                                                        <option value="5">Bull</option>
+                                                        <option value="6">Cat</option>
+                                                        <option value="7">Chicken</option>
+                                                        <option value="8">Cow</option>
+                                                    </select>
+                                                </td>
+                                                <td><label for= "vper">Personality</label>
+                                                    <select id="vper">
+                                                        <option value="1">Lazy (Bonyari)</option>
+                                                        <option value="2">Jock (Hakihaki)</option>
+                                                        <option value="3">Cranky (Kowai)</option>
+                                                        <option value="4">Smug (Kiza)</option>
+                                                        <option value="5">Normal (Futsuu)</option>
+                                                        <option value="6">Peppy (Genki)</option>
+                                                        <option value="7">Snooty (Otona)</option>
+                                                        <option value="8">Sisterly (Aneki)</option>
+                                                        <option value="9">NULL</option>
+                                                      </select>
+                                                </td>
+                                                <td><label>Phrase: </label><input type="text"></td>
+
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="button-set-vert">
+                                        <button>ADD</button>
+                                        <button>SEARCH</button>
+                                        <button>UPDATE</button>
+                                    </div>
+                            </form>
+                            <form class = "form invisible" id = "form2" style="z-index: 9;">
+                                <div id="mimg">
+                                    <img src="https://img.rankedboost.com/wp-content/plugins/animal-crossing-new-horizons/assets/DIY-Images/Clump%20of%20weeds.png">
+                                </div>
+                                <div id="mform">
+                                    <table class="top-form-table">
+                                        <tbody>
+                                        <tr>
+                                            <td><label>MaterialID: </label><input type="number"></td>
+                                            <td><label>Name: </label><input type="text"></td>
+                                            <td><label for="mrare">Rarity: </label>
+                                                <select id="mrare">
+                                                    <option value="0">NULL</option>
+                                                    <option value="1">Very Common</option>
+                                                    <option value="2">Common</option>
+                                                    <option value="3">Rare</option>
+                                                    <option value="4">Super Rare</option>
+                                                    <option value="5">Seasonal</option>
+                                                    <option value="6">Event Limited</option>
+                                                </select>
+                                            </td>
+                                            
+                                        </tr>
+
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-set-vert">
+                                    <button>ADD</button>
+                                    <button>SEARCH</button>
+                                    <button>UPDATE</button>
+                                </div>
+                            </form>
+                            <form class = "form invisible" id = "form3" style="z-index: 8;">
+                                <div id="fimg">
+                                    <img src="https://vignette.wikia.nocookie.net/animalcrossing/images/d/d6/NH-Furniture-Apple_chair.png/revision/latest?cb=20200325181428">
+                                </div>
+                                <div id="fform">
+                                    <table class="top-form-table">
+                                        <tbody>
+                                        <tr>
+                                            <td><label>FurnitureID: </label><input type="number"></td>
+                                            <td><label>Name: </label><input type="text"></td>
+                                            <td><label for="fget">Source: </label>
+                                                <select id="fget">
+                                                  <option value="1">Nook's Cranny</option>
+                                                  <option value="2">DIY</option>
+                                                  <option value="3">Nook Miles</option>
+                                                  <option value="4">Nook Shopping</option>
+                                                  <option value="4">Gulliver</option>
+                                                  <option value="4">Fishing</option>
+                                                  <option value="4">Bug-Off</option>
+                                                </select>
+                                            </td>
+                                            <td><label>RecipeID: </label><input type="number"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="fsize">Size:</label>
+                                                <select id="fsize">
+                                                    <option value="0">1*1</option>
+                                                    <option value="1">1*2</option>
+                                                    <option value="2">1*3</option>
+                                                    <option value="3">0.5*2</option>
+                                                    <option value="4">2*2</option>
+                                                    <option value="5">2*3</option>
+                                                    <option value="6">3*3</option>
+                                                </select>
+                                            </td>
+                                            <td><label>Buy: </label><input type="number" value="0"></td>
+                                            <td><label>Sell: </label><input type="number" value="0"></td>
+
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-set-vert">
+                                    <button>ADD</button>
+                                    <button>SEARCH</button>
+                                    <button>UPDATE</button>
+                                </div>
+                            </form>
+                            <form class = "form invisible" id = "form4" style="z-index: 7;">
+                                <div id="rform1">
+                                    <table class="top-form-table">
+                                        <tbody>
+                                            <tr><td><label>RecipeID: </label><input type="number"></td></tr>
+                                            <tr><td><label>Name: </label><input type="text"></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="rform2">
+                                    <table class="top-form-table">
+                                        <tbody>
+                                        <tr>
+                                            <td><label>Material1: </label><input type="number" class="mid-input">X<input type="number" class="short-input"></td>
+                                            <td><label>Material2: </label><input type="number" class="mid-input">X<input type="number" class="short-input"></td>
+                                            <td><label>Material3: </label><input type="number" class="mid-input">X<input type="number" class="short-input"></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><label>Material4: </label><input type="number" class="mid-input">X<input type="number" class="short-input"></td>
+                                            <td><label>Material5: </label><input type="number" class="mid-input">X<input type="number" class="short-input"></td>
+                                            <td><label>Material6: </label><input type="number" class="mid-input">X<input type="number" class="short-input"></td>
+                                            
+                                        </tr>
+
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-set-vert">
+                                    <button>ADD</button>
+                                    <button>SEARCH</button>
+                                    <button>UPDATE</button>
+                                </div>
+                            </form>
+                            <form class = "form invisible" id = "form5" style="z-index: 6;">
+                                <div id="rform1">
+                                    <table class="top-form-table">
+                                        <tbody>
+                                            <tr><td><label>UserID: </label><input type="number"></td></tr>
+                                            <tr><td><label>IslandID: </label><input type="number"></td></tr>
+                                            <tr><td><label>Name: </label><input type="text"></td></tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="rform2">
+                                    <table class="top-form-table">
+                                        <tbody>
+                                        <tr>
+                                            <td><label>Villager1: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager2: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager3: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager4: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager5: </label><input type="number" class="mid-input"></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><label>Villager6: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager7: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager8: </label><input type="number" class="mid-input"></td>
+                                            <td><label>Villager9: </label><input type="number" class="mid-input"></td>
+                                            <td><label>VillagerX: </label><input type="number" class="mid-input"></td>
+                                            
+                                        </tr>
+
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <div class="button-set-vert">
+                                    <button>ADD</button>
+                                    <button>SEARCH</button>
+                                    <button>UPDATE</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id = 'app-result'>
+                        <div id="app-result-box">
+                            <div class = "app-result-list" style="z-index: 10;">
+                                <table class="result-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Gender</th>
+                                            <th>Species</th>
+                                            <th>Personality</th>
+                                            <th>Birthday</th>
+                                            <th>Operation</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Alfonso</td>
+                                            <td>Male</td>
+                                            <td>Alligator</td>
+                                            <td>Lazy</td>
+                                            <td>06/09</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Gender</td>
+                                            <td>Species</td>
+                                            <td>Personality</td>
+                                            <td>Birthday</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Gender</td>
+                                            <td>Species</td>
+                                            <td>Personality</td>
+                                            <td>Birthday</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Gender</td>
+                                            <td>Species</td>
+                                            <td>Personality</td>
+                                            <td>Birthday</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class = "app-result-list invisible" style="z-index: 9;">
+                                <table class="result-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Rarity</th>
+                                            <th>Operation</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Clump of weeds</td>
+                                            <td>Very Common</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clump of weeds</td>
+                                            <td>Very Common</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clump of weeds</td>
+                                            <td>Very Common</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clump of weeds</td>
+                                            <td>Very Common</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class = "app-result-list invisible" style="z-index: 8;">
+                                <table class="result-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Source</th>
+                                            <th>Price</th>
+                                            <th>Size</th>
+                                            <th>Operation</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Fan</td>
+                                            <td>Nook's Cranny</td>
+                                            <td><label>Buy:<div>1700</div>&#9<label>Sell:</label><div>425</div></td>
+                                            <td>1*1</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Festive tree</td>
+                                            <td>DIY</td>
+                                            <td><label>Buy:<div>N/A</div>&#9<label>Sell:</label><div>1400</div></td>
+                                            <td>1*1</td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class = "app-result-list invisible" style="z-index: 7;">
+                                <table class="result-table">
+                                    <tbody>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Materials</th>
+                                            <th>Operation</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherry-blossom pochette</td>
+                                            <td>
+                                                <div>
+                                                    <div>cherry-blossom petal X 6</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bunny Day crown</td>
+                                            <td>
+                                                <div>
+                                                    <div>Earth Egg X 1</div>
+                                                    <div>Stone Egg X 1</div>
+                                                    <div>Leaf Egg X 1</div>
+                                                    <div>Wood Egg X 1</div>
+                                                    <div>Sky Egg X 1</div>
+                                                    <div>Water Egg X 1</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button>Choose</button>
+                                                <button>Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class = "app-result-list invisible" style="z-index: 6;">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+    <script defer="" type="text/javascript" src="./main.js" charset="utf-8"></script>
+</html>
